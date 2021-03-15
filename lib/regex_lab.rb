@@ -21,7 +21,13 @@ end                               # may not include any other letters other than
 
 
 def first_word_capitalized_and_ends_with_punctuation?(text)
-  text.scan(/(^[A-Z]).+([.])/);
+  scanThis = text.scan(/(^[A-Z]).+([.])/);
+  
+  if scanThis
+    return true; 
+  else 
+    return false;
+  end
 end
 
 
