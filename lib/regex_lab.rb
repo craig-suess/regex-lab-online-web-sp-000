@@ -21,7 +21,7 @@ end                               # may not include any other letters other than
 
 
 def first_word_capitalized_and_ends_with_punctuation?(text)
-  scanThis = text.match(/(^[A-Z]).+([.])/);     # 1st letter is UPPERCASE, and must end in a .
+  scanThis = text.match(/(^[A-Z]).+([.?!])/);     # 1st letter is UPPERCASE, and must end in                                                     # punctuation
   
   #ok = text.match(/(^[A-Z].................................................)([.])/ just another way of writing this expression but it is alot longer for readibility
   
