@@ -25,9 +25,8 @@ def first_word_capitalized_and_ends_with_punctuation?(text)
   
   if scanThis
     return true; 
-  elsif !scanThis 
-    return false;
   end
+ return false; 
 end
 
 
