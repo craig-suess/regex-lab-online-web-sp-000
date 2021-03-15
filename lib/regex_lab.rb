@@ -38,7 +38,7 @@ def valid_phone_number?(phone)
   #phone.match(/\b[0-9]{3}[0-9]{3}[0-9]{4}\b|\b[0-9]{3}\s[0-9]{3}\s[0-9]{4}\b|\W\D\S\b[0-9]{3}\S[0-9]{3}\S[0-9]{4}\b|\S\b[0-9]{3}\S[0-9]{7}\b/)
   
   
-  phoneNumber = phone.match(/(\d{10})|(\d{3}\s\d{3}\s\d{4})|(\S\d{3}\S\d{3}\S\d{4}\b)|(\S\b\d{3}\S\d{7})/);           # their must be 10 digits in the phone number, must not contain                                 # words, can contain whitespace inbetween, b
+  phoneNumber = phone.match(/(\d{10})|(\d{3}\s\d{3}\s\d{4})|(\S\d{3}\S\d{3}\S\d{4}\b)|(\S\b\d{3}\S\d{7})/);           # their must be 10 digits in the phone number, must not contain                                 # words, can contain whitespace inbetween, any boundary around                                 # the first 3 digits
                                       
   if phoneNumber
     return true; 
